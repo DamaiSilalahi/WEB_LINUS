@@ -1,146 +1,251 @@
-* {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Map container */
 .mapContainer {
-   border-width: 0.5px;
-   border-style: solid;
-   border-radius: 10px;
-   border-color: black;
-   padding: 10px;
-   margin: 100px auto;
-   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border-width: 0.5px;
+  border-style: solid;
+  position: relative;
+  border-radius: 10px;
+  border-color: black;
+  padding: 10px;
+  margin: 100px auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .mapContainer p {
-   position: absolute; 
-   bottom: 0; 
-   left: 0; 
-   padding: 15px; 
+  position: absolute;
+  bottom: 1px; /* Adjust this value as needed */
+  left: 5%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
 }
-
+/* Footer */
 .footer {
-   border-color: black;
-   color: white;
-   background-color: rgb(30, 27, 27);
-   width: 100%;
-   padding: 10px;
-   position: relative;
-   left: 0;
-   right: 0;
+  border-color: black;
+  color: white;
+  background-color: rgb(30, 27, 27);
+  width: 100%;
+  padding: 10px;
+  position: relative;
 }
-
-.footer-left {
-   display: flex; 
-   align-items: center; 
-   padding: 50px;
- }
-
-.footer-left i {
-  margin-right: 10px;
-  font-size: 100px;
-  padding: 20px;
-}
-
-.text-container {
-   display: flex;
-   flex-direction: column;
-}
-
 
 .footer-content {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   background-color: #f5f5f5;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-   width: 100%;
-   margin: 0 auto;
- }
- 
- /* Layanan pengaduan styling */
- .layanan-pengaduan {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   text-align: center;
-   margin-bottom: 20px;
- }
- 
- /* Kotak ikon orang */
- .icon-box {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 150px; /* Ukuran kotak */
-   height: 150px; /* Ukuran kotak */
-   border: 5px solid #4CAF50; /* Warna border kotak */
-   border-radius: 10px; /* Membuat kotak sedikit melengkung */
-   margin-right: 20px; /* Memberi jarak dengan teks layanan pengaduan */
- }
- 
- .layanan-pengaduan p {
-   font-size: 35px;
-   font-weight: bold;
-   color: #333;
-   text-align: left; /* Agar teks tersusun di sebelah kiri */
- }
- 
- /* Contact info styling */
- .contact-info {
-   display: flex;
-   flex-direction: row; /* Menyusun ikon dan teks dalam satu baris */
-   align-items: center; /* Agar ikon dan teks sejajar secara vertikal */
-   justify-content: center; /* Pusatkan elemen */
-   margin-top: 20px;
- }
- 
- .phone {
-   display: flex;
-   align-items: center;
-   
- }
- 
- .phone i {
-   text-decoration: none;
-   padding: 10px;
-   background-color: black;
-   margin-right: 15px;
-   border-radius: 50%;
-   font-size: 40px;
-   color: green;
-   opacity: 0.9;
-   transition: 0.5s;
- 
- }
- 
- .phone i:hover {
-   background-color: white;
- }
- 
- .phone span {
-   font-size: 18px;
-   font-weight: bold;
-   color: #333;
-   line-height: 1.5;
-   display: inline-block;
-  
- }
- 
- /* Menyusun ikon WhatsApp */
- /* .phone i + i {
-   margin-left: 5px; /* Memberi jarak antara ikon phone dan WhatsApp */
- /* } */ */
- 
- /* Mengatur baris agar mengikuti tinggi kotak ikon orang */
- .contact-info {
-   width: 100%;
-   display: flex;
-   justify-content: center; /* Menyelaraskan isi di tengah */
-   align-items: center; /* Agar ikon dan teks sejajar secara vertikal */
- }
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.layanan-pengaduan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #4CAF50;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.layanan-pengaduan p {
+  font-size: 35px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone i {
+  text-decoration: none;
+  padding: 10px;
+  background-color: black;
+  margin-right: 15px;
+  border-radius: 50%;
+  font-size: 40px;
+  color: green;
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.phone i:hover {
+  background-color: white;
+}
+
+.phone span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Navigasi */
+/* Navigasi */
+nav {
+  background-color: #089a5b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.center-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  color: white;
+  position: absolute; /* Menempatkan di posisi absolut */
+  left: 50%; /* Menempatkan elemen di tengah secara horizontal */
+  transform: translateX(-50%); /* Membuat elemen betul-betul di tengah */
+}
+
+.center-nav h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+}
+
+.center-nav .location-linus-btn {
+  display: flex;
+  align-items: center;
+  padding: 0; 
+  margin-left: 2px; 
+  background-color: transparent; 
+  border-radius: 0;
+  transition: background-color 0.3s;
+}
+
+@keyframes moveLogo {
+  0% {
+      transform: translateX(0); /* Posisi awal */
+  }
+  50% {
+      transform: translateX(5px); /* Bergerak ke kanan */
+  }
+  100% {
+      transform: translateX(0); /* Kembali ke posisi awal */
+  }
+}
+
+.location-linus-btn img {
+  max-width: 45px; 
+  animation: moveLogo 2s infinite ease-in-out;
+}
+
+.location-linus-btn:hover img {
+  animation: moveLogo 1s infinite ease-in-out;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 50%; /* Posisi vertikal di tengah */
+  right: 20px; /* Pojok kanan atas */
+  transform: translateY(-50%); /* Sejajarkan vertikal dengan elemen lain */
+}
+
+.hamburger:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hamburger:active {
+  transform: translateY(-50%) scale(0.95);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+  z-index: 1000;
+  height: 100%;
+  width: 0; /* Width default 0 */
+  position: fixed;
+  top: 78px; /* Adjust top to 0 for full height */
+  right:0;
+  background-color: #070707b9;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Didot', serif; 
+  color: #ffffff;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a:hover {
+  color: #f0f0f0;
+  background-color: rgba(153, 143, 143, 0.219);
+}
+
+.sidebar .closebtn {
+  font-family: 'Didot', serif;
+  position: absolute;
+  top: 20px;
+  right: 10px; /* Adjusted position */
+  font-size: 36px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.sidebar.active {
+  width: 250px; /* Adjust width when active */
+  z-index: 2000; /* Ensure it is above other elements */
+}
