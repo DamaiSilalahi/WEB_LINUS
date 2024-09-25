@@ -8,23 +8,27 @@
 .mapContainer {
   border-width: 0.5px;
   border-style: solid;
-  position: relative;
+  position: relative; /* Pastikan ini sudah ada */
   border-radius: 10px;
-  border-color: black;
+  border-color:   black;
   padding: 10px;
   margin: 100px auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  width: 100%; /* Buat ukuran kontainer fleksibel */
+  max-width: 1000px; /* Batas maksimal lebar kontainer */
+  height: auto; /* Buat tinggi dinamis jika perlu */
 }
 
 .mapContainer p {
   position: absolute;
-  bottom: 1px; /* Adjust this value as needed */
-  left: 5%;
-  transform: translateX(-50%);
+  bottom: 10px; /* Berikan jarak tetap dari bawah */
+  left: 10px; /* Jarak tetap dari kiri */
   font-size: 15px;
   font-weight: bold;
   color: #333;
+  margin: 0; /* Hindari margin default yang mungkin menggeser elemen */
 }
+
 /* Footer */
 .footer {
   border-color: black;

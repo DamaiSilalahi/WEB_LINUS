@@ -1,0 +1,156 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: #089a5b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 60px;
+    margin-right: 10px;
+}
+
+.center-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    color: white;
+}
+
+.center-nav h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0; 
+}
+
+.center-nav .location-linus-btn {
+    display: flex;
+    align-items: center;
+    padding: 0; 
+    margin-left: 2px; 
+    background-color: transparent; 
+    border-radius: 0;
+    transition: background-color 0.3s;
+}
+
+@keyframes moveLogo {
+    0% {
+        transform: translateX(0); /* Posisi awal */
+    }
+    50% {
+        transform: translateX(5px); /* Bergerak ke kanan */
+    }
+    100% {
+        transform: translateX(0); /* Kembali ke posisi awal */
+    }
+}
+
+.center-nav .location-linus-btn img {
+    max-width: 45px; 
+    animation: moveLogo 2s infinite ease-in-out;
+
+}
+
+.location-linus-btn:hover img {
+    animation: moveLogo 1s infinite ease-in-out; /* Mempercepat saat di-hover */
+}
+
+.center-nav {
+    text-decoration: none;
+    font-family: "Segoe UI", sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 25px; 
+    transition: color 0.35s;
+}
+
+.center-nav {
+    color: rgb(254, 248, 248);
+}
+
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    position: absolute;
+    right: 10px; /* Aligning it to the right */
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.hamburger:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background-color: #070707b9;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar a {
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Didot', serif; 
+    color: #ffffff;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a:hover {
+    color: #f0f0f0;
+    background-color: rgba(153, 143, 143, 0.219);
+}
+
+.sidebar .closebtn {
+    font-family: 'Didot', serif;
+    position: absolute;
+    top: 20px;
+    right: 10px; /* Adjusted position */
+    font-size: 36px;
+    color: #ffffff;
+    cursor: pointer;
+}
+#sidebar.active {
+    width: 250px;
+}
