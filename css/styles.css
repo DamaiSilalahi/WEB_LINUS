@@ -1,0 +1,163 @@
+/* General styling for light mode */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode for the entire body */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* Header and Footer in dark mode */
+body.dark-mode nav {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+body.dark-mode footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Dark mode for the footer content box */
+body.dark-mode footer .footer-content {
+    background-color: #444444; /* Darker background for the footer content box */
+    color: #ffffff; /* Ensure all text in footer-content becomes white */
+    border: 1px solid #555555; /* Optional border for box definition */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for visual appeal */
+}
+
+/* Ensure all text inside footer, including links, become white */
+body.dark-mode footer p,
+body.dark-mode footer span,
+body.dark-mode footer a,
+body.dark-mode footer .phone {
+    color: #ffffff; /* Make all text in footer white in dark mode */
+}
+
+/* Dark mode for footer icons */
+body.dark-mode footer .icon-box i,
+body.dark-mode footer .phone i {
+    color: #ffffff; /* Change icons to white in dark mode */
+}
+
+/* Override dark mode for <main> to keep it light */
+body.dark-mode main {
+    background-color: white !important;
+    color: black !important;
+}
+
+
+
+/* Rest of your CSS */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Toggle button container */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Hide the default checkbox */
+#darkModeToggle {
+    display: none;
+}
+
+/* Toggle switch styling */
+.toggle-label {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Moving ball inside the toggle */
+.toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Icon styling */
+.sun-icon, .moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.sun-icon {
+    left: 10px;
+}
+
+.moon-icon {
+    right: 10px;
+}
+
+/* Dark mode enabled */
+#darkModeToggle:checked + .toggle-label {
+    background-color: #4d4d4d;
+}
+
+/* Move the ball to the right when dark mode is enabled */
+#darkModeToggle:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+}
+
+
+/* Styling for the notification box */
+.notification-box {
+    position: fixed;
+    bottom: -100px; /* Awalnya di luar layar */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:  #089a5b;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    z-index: 1000;
+    transition: all 0.5s ease-in-out; /* Animasi smooth */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Animasi ketika ditampilkan */
+.notification-box.show {
+    bottom: 30px; /* Muncul di 30px dari bawah layar */
+    opacity: 1;
+}
+
+/* Optional: Hover effect untuk lebih interaktif */
+.notification-box:hover {
+    background-color: #089a5b;
+    cursor: pointer;
+}
+
+/* Icon styling (optional, jika ingin menambahkan icon) */
+.notification-box::before {
+    content: "⚠️"; /* Kamu bisa mengganti dengan icon atau emoji */
+    font-size: 20px;
+}
