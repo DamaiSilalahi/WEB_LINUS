@@ -1,0 +1,116 @@
+/* Gaya umum */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Atur elemen ke arah atas */
+  align-items: center;
+  height: 100vh; /* Layar penuh */
+}
+
+.main-title {
+  font-size: 36px;
+  color:#28a745;
+  width: 100%;
+  text-align: center;
+}
+
+/* Bagian konten (deskripsi + tabel) */
+.TLcontent {
+  display: flex;
+  justify-content: space-between;
+  width: 120%;
+  max-width: 1300px;
+  margin-left: 90px;
+  margin-bottom: 100px;
+  margin-top: 125px; /* Jarak antara header dan konten */
+}
+
+.TLdescription {
+  width: 90%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding:  20px;
+  margin-right: 20px;
+  line-height: 1.6;
+  
+}
+
+.TLtable {
+  width: 85%;
+  height: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+}
+
+/* Tabel dan gaya konten lainnya */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.TLbold {
+  font-weight: bold;
+}
+
+.TLinfo {
+  background-color: #f9f9f9;
+  font-style: italic;
+}
+
+.TLnotes {
+  margin-top: 15px;
+  width: 500px;
+  font-size: 15px;
+  color: #333;
+}
+
+.notes p {
+  margin: 5px 0;
+}
+
+.TLprocedure-table {
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 85%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 30%;
+}
+.content-procedure {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+   /* Jarak dari header */
+}
+
+.TLbus-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
