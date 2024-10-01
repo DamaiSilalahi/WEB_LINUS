@@ -100,8 +100,42 @@
                 </details>
             </div>
         </section>
+        <section  class="saran-container">
+            <form id="contact-form" action="https://formspree.io/f/xrbzneqd" method="POST">
+            <h2>Kotak Saran</h2> 
+            <input
+        type="text"
+        id="full-name"
+        name="full-name"
+        placeholder="Ketik Nama Anda"
+        required
+      />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Ketik Email Anda"
+        required
+      />
+      <input
+        type="text"
+        id="subject"
+        name="subject"
+        placeholder="Ketik Subjek Anda"
+        required
+      />
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Ketik Saran Anda"
+        required
+      ></textarea>
+      <button type="submit">Kirim Saran</button>
+    </form>      
+        </section>
     </main>
     <script src="/js/sidebar.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>
