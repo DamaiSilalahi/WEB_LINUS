@@ -1,31 +1,31 @@
 /* General styling for light mode */
 body {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #000000;
+    color: #ffffff;
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
 /* Dark mode for the entire body */
 body.dark-mode {
-    background-color: #121212;
-    color: #e0e0e0;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* Header and Footer in dark mode */
 body.dark-mode nav {
-    background-color: #333333;
+    background-color:  #1c1c1c;
     color: #ffffff;
 }
 
 body.dark-mode footer {
-    background-color: #333333;
+    background-color:  #1c1c1c;
     color: #ffffff;
 }
 
 /* Dark mode for the footer content box */
 body.dark-mode footer .footer-content {
-    background-color: #444444; /* Darker background for the footer content box */
+    background-color: #1c1c1c;
     color: #ffffff; /* Ensure all text in footer-content becomes white */
     border: 1px solid #555555; /* Optional border for box definition */
     padding: 20px;
@@ -47,10 +47,12 @@ body.dark-mode footer .phone i {
 }
 
 /* Override dark mode for <main> to keep it light */
-body.dark-mode main {
+body.dark-mode .mapContainer {
     background-color: white !important;
     color: black !important;
 }
+
+
 
 
 
@@ -129,7 +131,7 @@ body.dark-mode main {
     bottom: -100px; /* Awalnya di luar layar */
     left: 50%;
     transform: translateX(-50%);
-    background-color:  #089a5b;
+    background-color: #089a5b;
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
@@ -137,9 +139,9 @@ body.dark-mode main {
     opacity: 0;
     z-index: 1000;
     transition: all 0.5s ease-in-out; /* Animasi smooth */
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    display: center; /* Flexbox untuk sejajarkan icon dan teks */
+    align-items: center; /* Sejajarkan icon dan teks secara vertikal */
+    gap: 10px; /* Jarak antara icon dan teks */
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
@@ -158,6 +160,7 @@ body.dark-mode main {
 
 /* Icon styling (optional, jika ingin menambahkan icon) */
 .notification-box::before {
-    content: "⚠️"; /* Kamu bisa mengganti dengan icon atau emoji */
+    content: ""; /* Icon atau emoji */
     font-size: 20px;
+    display: inline-block; /* Pastikan icon inline dengan teks */
 }

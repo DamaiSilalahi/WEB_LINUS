@@ -1,0 +1,168 @@
+/* General styling for light mode */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode for the entire body */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header in dark mode */
+body.dark-mode nav {
+    background-color:  #1c1c1c;
+    color: #ffffff;
+}
+/* Styling untuk dark mode khusus pada section FAQ */
+body.dark-mode .faq-section {
+    background-color: #1c1c1c; /* Background hitam */
+    color: #ffffff; /* Teks berwarna putih */
+}
+
+body.dark-mode .faq-section header {
+    background-color:#1c1c1c; /* Dark background for header */
+}
+
+body.dark-mode .faq-section header h2 {
+    background-color: #1c1c1c; /* Dark background for header */
+    color: #ffffff;
+}
+
+/* Gaya untuk kontainer FAQ */
+body.dark-mode .faq-container .faq-box {
+    background-color: #000000; /* Kotak FAQ dengan warna lebih gelap */
+    border: 1px solid #333; /* Border agar terlihat jelas */
+}
+
+/* Styling untuk summary (pertanyaan) dalam FAQ */
+body.dark-mode .faq-container .faq-box summary {
+    background-color: #000000;
+    color: #ffffff; /* Teks pertanyaan berwarna putih */
+    cursor: pointer;
+}
+
+/* Styling untuk jawaban FAQ */
+body.dark-mode .faq-container .faq-box .faq-answer {
+    background-color: #000000;
+    color: #ffffff; /* Teks jawaban berwarna lebih terang */
+}
+
+/* Styling untuk garis pemisah */
+body.dark-mode .faq-container .faq-divider {
+    background-color: #444; /* Warna garis pemisah lebih gelap */
+}
+
+/* Garis pemisah dalam FAQ di dark mode */
+body.dark-mode .faq-divider {
+    border-color: #444; /* Warna garis lebih gelap di dark mode */
+}
+
+/* Styling untuk form kotak saran dalam dark mode */
+body.dark-mode .saran-container {
+    background-color: #1a1a1a; /* Background lebih gelap untuk kotak saran */
+    color: #ffffff; /* Teks putih */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styling untuk input dan textarea di form kotak saran */
+body.dark-mode .saran-container input,
+body.dark-mode .saran-container textarea {
+    background-color: #333; /* Background input/textarea lebih gelap */
+    color: #ffffff; /* Teks putih */
+    border: 1px solid #555; /* Border input/textarea */
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Styling untuk tombol kirim di dark mode */
+body.dark-mode .saran-container button {
+    background-color: #089a5b; /* Warna tombol */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect untuk tombol kirim */
+body.dark-mode .saran-container button:hover {
+    background-color: #066f4a; /* Warna saat hover */
+}
+
+
+
+
+/* Rest of your CSS */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Toggle button container */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Hide the default checkbox */
+#darkModeToggle {
+    display: none;
+}
+
+/* Toggle switch styling */
+.toggle-label {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Moving ball inside the toggle */
+.toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Icon styling */
+.sun-icon, .moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.sun-icon {
+    left: 10px;
+}
+
+.moon-icon {
+    right: 10px;
+}
+
+/* Dark mode enabled */
+#darkModeToggle:checked + .toggle-label {
+    background-color: #4d4d4d;
+}
+
+/* Move the ball to the right when dark mode is enabled */
+#darkModeToggle:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+}
