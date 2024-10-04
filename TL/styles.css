@@ -1,0 +1,130 @@
+/* General styling for light mode */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode for the entire body */
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Header in dark mode */
+body.dark-mode nav {
+    background-color:  #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark-mode Header {
+    background-color:  #1c1c1c;
+}
+
+body.dark-mode .main-title {
+    color: #ffffff;
+}
+
+body.dark-mode .TLcontent .TLdescription {
+    background-color:  #000000;
+}
+
+
+
+body.dark-mode .TLtable {
+    background-color:  #000000;
+}
+
+body.dark-mode .TLtable th {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark-mode .TLinfo {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+body.dark-mode .TLnotes {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .TLprocedure-table {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body.dark-mode .TLprocedure-table th {
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Rest of your CSS */
+.content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Toggle button container */
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* Hide the default checkbox */
+#darkModeToggle {
+    display: none;
+}
+
+/* Toggle switch styling */
+.toggle-label {
+    position: relative;
+    width: 60px;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Moving ball inside the toggle */
+.toggle-ball {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Icon styling */
+.sun-icon, .moon-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.sun-icon {
+    left: 10px;
+}
+
+.moon-icon {
+    right: 10px;
+}
+
+/* Dark mode enabled */
+#darkModeToggle:checked + .toggle-label {
+    background-color: #4d4d4d;
+}
+
+/* Move the ball to the right when dark mode is enabled */
+#darkModeToggle:checked + .toggle-label .toggle-ball {
+    transform: translateX(30px);
+}
