@@ -1,55 +1,43 @@
-/* Gaya umum */
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
   margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Atur elemen ke arah atas */
   align-items: center;
-  height: 100vh; /* Layar penuh */
 }
-
+main {
+  margin-top: 60px; /* Sesuaikan jarak sesuai kebutuhan */
+  padding-top: 20px;
+}
 .main-title {
   font-size: 36px;
-  color:#28a745;
-  width: 100%;
+  color: #28a745;
   text-align: center;
 }
 
-/* Bagian konten (deskripsi + tabel) */
+/* Content container */
 .TLcontent {
   display: flex;
-  justify-content: space-between;
-  width: 120%;
+  flex-direction: column; /* Stack vertically on small screens */
+  width: 90%;
   max-width: 1300px;
-  margin-left: 90px;
-  margin-bottom: 100px;
-  margin-top: 125px; /* Jarak antara header dan konten */
+  margin: 50px auto 100px; /* Ubah margin atas menjadi 50px */
 }
 
 .TLdescription {
-  width: 90%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding:  20px;
-  margin-right: 20px;
-  line-height: 1.6;
-  
-}
-
-.TLtable {
-  width: 85%;
-  height: 45%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin-right: 20px;
+  margin: 20px 0; /* Margin untuk jarak vertikal */
 }
 
-/* Tabel dan gaya konten lainnya */
+.TLrute {
+  width: 100%; /* Full width for images on small screens */
+}
+
+/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -79,38 +67,63 @@ td {
 
 .TLnotes {
   margin-top: 15px;
-  width: 500px;
   font-size: 15px;
   color: #333;
 }
 
-.notes p {
-  margin: 5px 0;
-}
-
-.TLprocedure-table {
-  margin-top: 20px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
-  width: 85%;
+.TLprocedure-table, .TLtable, .TLrute {
+  margin: 20px auto;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  height: 30%;
-}
-.content-procedure {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-   /* Jarak dari header */
 }
 
-.TLbus-image {
-  width: 100%;
-  max-width: 600px;
+/* Image styling */
+.TLbus-image, .TLrute {
+  width: 100%; /* Full width for images */
+  max-width: 600px; /* Limit max width */
   height: auto;
   display: block;
   margin: 0 auto 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+  .TLcontent {
+    flex-direction: row; /* Side by side on larger screens */
+  }
+
+  .TLdescription {
+    width: 48%; /* Two columns */
+    margin: 0 10px; /* Side margins */
+  }
+
+  .TLtable, .TLprocedure-table {
+    margin-top: 0; /* Adjust top margin */
+  }
+}
+
+@media (max-width: 576px) {
+  .main-title {
+    font-size: 28px; /* Smaller title on small screens */
+  }
+
+  table {
+    font-size: 14px; /* Smaller font for tables */
+  }
+
+  .TLnotes {
+    font-size: 12px; /* Smaller notes */
+  }
+}
+@media (max-width: 768px) {
+  main {
+    margin-top: 40px; /* Jarak yang lebih kecil untuk layar tablet */
+  }
+}
+@media (max-width: 576px) {
+  main {
+    margin-top: 30px; /* Jarak yang lebih kecil untuk layar ponsel */
+  }
 }
