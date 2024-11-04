@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/TL/styles.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/TL/style2.css">
-    <link rel="stylesheet" href="/css/stylenav.css">
+    <link rel="stylesheet" href="../css/TL.css">
+    <link rel="stylesheet" href="../css/dm_TL.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/stylenav.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
     <title>LINUS TRACKING</title>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
+    </script>
 </head>
 <body>
     <nav>
         <div class="logo-container">
-            <img src="/img/logousu.jpg" alt="logo usu">
+            <img src="../img/logousu.jpg" alt="logo usu">
         </div>
         <div class="center-nav">
-            <a href="/index/index.html"> <!-- Pastikan jalur file benar -->
+            <a href="../index.php"> 
                 <h1>
                     <span>LINUS</span>
                     <span>TRACKING</span>
                 </h1>
             </a>
-            <a href="/index/index.html" class="location-linus-btn"> <!-- Pastikan jalur file benar -->
-                <img src="/img/logolinus1.png" alt="logolinus">
+            <a href="../index.php" class="location-linus-btn">
+                <img src="../img/logolinus1.png" alt="logolinus">
             </a>
         </div>
         <div class="hamburger" onclick="toggleSidebar()">
@@ -35,8 +41,8 @@
       
       <aside id="sidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
-          <a href="/TL/TentangLinus.html" onclick="openTentangLinus()">Tentang Linus</a>
-          <a href="/faq/index.html" onclick="openFAQ()">FAQ</a>
+          <a href="TentangLinus.php" onclick="openTentangLinus()">Tentang Linus</a>
+          <a href="../faq/faq.php" onclick="openFAQ()">Pertanyaan</a>
 
           <div class="toggle-container">
             <input type="checkbox" id="darkModeToggle">
@@ -55,7 +61,7 @@
                 <header>
                 <h1 class="main-title">TENTANG LINUS</h1>
                     </header>
-                <img src="linus_1.webp" alt="Gambar Bus LINUS" class="TLbus-image">
+                <img src="../img/linus_1.webp" alt="Gambar Bus LINUS" class="TLbus-image">
                 <p>
                     Universitas Sumatera Utara dengan bangga mempersembahkan <strong>Bus LINUS (Lintas USU)</strong>, sebuah inovasi transportasi transit yang diluncurkan pada 9 Maret 2013. Layanan ini dirancang khusus untuk memudahkan mobilitas civitas academica USU, menawarkan kenyamanan dan efisiensi tanpa biaya, alias gratis!
                 </p>
@@ -71,7 +77,7 @@
             </article>
 
             <article>
-                <img src="rute_linus.png" alt="Gambar rute linus" class="TLrute">
+                <img src="../img/rute_linus.png" alt="Gambar rute linus" class="TLrute">
                 <div class="TLtable">
                     <table>
                         <thead>
@@ -133,8 +139,7 @@
             </article>
         </section>
     </main>
-    
-    <script src="/js/sidebar.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="../js/script.js"></script>
+   
 </body>
 </html>

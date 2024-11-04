@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/stylenav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/stylenav.css">  
+    <link rel="stylesheet" href="css/dm_main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Didot&display=swap" rel="stylesheet">
     <title>LINUS TRACKING</title>
+    <script>
+        function toggleSidebar() {
+        var sidebar = document.getElementById("sidebar");
+        sidebar.classList.toggle("active");
+    }
+
+    </script>
 </head>
 <body>
     <nav>
         <div class="logo-container">
-            <img src="/img/logousu.jpg" alt="logo usu">
+            <img src="img/logousu.jpg" alt="logo usu">
         </div>
         <div class="center-nav">
-            <a href="/index/index.html"> <!-- Pastikan jalur file benar -->
+            <a href="index.php"> 
                 <h1>
                     <span>LINUS</span>
                     <span>TRACKING</span>
                 </h1>
             </a>
-            <a href="/index/index.html" class="location-linus-btn"> <!-- Pastikan jalur file benar -->
-                <img src="/img/logolinus1.png" alt="logolinus">
+            <a href="index.php" class="location-linus-btn"> <!-- Pastikan jalur file benar -->
+                <img src="img/logolinus1.png" alt="logolinus">
             </a>
         </div>
         
@@ -35,8 +43,8 @@
 
 <aside id="sidebar" class="sidebar">
     <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
-    <a href="/TL/TentangLinus.html" onclick="openTentangLinus()">Tentang Linus</a>
-    <a href="/faq/index.html" onclick="openFAQ()">Pertanyaan</a>
+    <a href="TL/TentangLinus.php" onclick="openTentangLinus()">Tentang Linus</a>
+    <a href="faq/faq.php" onclick="openFAQ()">Pertanyaan</a>
 
     <div class="toggle-container">
         <input type="checkbox" id="darkModeToggle">
@@ -65,7 +73,7 @@
     <main>
         <div class="mapContainer">
             <p>LIVE TRACKING</p>
-            <iframe src="URL_MAP" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe width="100%" height="450" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </main>
 
@@ -85,9 +93,7 @@
                 </div>
             </div>
         </div>
-    </footer>
-
-    <script src="/js/sidebar.js"></script>
-    <script src="/js/script.js"></script>
+    </footer>   
+    <script src="js/script.js"></script>
 </body>
 </html>

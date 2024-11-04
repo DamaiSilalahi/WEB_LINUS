@@ -1,15 +1,12 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 main {
   margin-top: 60px; /* Sesuaikan jarak sesuai kebutuhan */
   padding-top: 20px;
 }
+
 .main-title {
   font-size: 36px;
   color: #28a745;
@@ -19,7 +16,7 @@ main {
 /* Content container */
 .TLcontent {
   display: flex;
-  flex-direction: column; /* Stack vertically on small screens */
+ /* Stack vertically on small screens */
   width: 90%;
   max-width: 1300px;
   margin: 50px auto 100px; /* Ubah margin atas menjadi 50px */
