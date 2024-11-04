@@ -7,7 +7,7 @@ body {
 
 /* Dark mode for the entire body */
 body.dark-mode {
-    background-color: #000000;
+    background-color: #333333;
     color: #ffffff;
 }
 
