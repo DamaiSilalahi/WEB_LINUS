@@ -52,7 +52,7 @@ nav {
     font-size: 1.5rem;
     text-align: center;
     margin: 0;
-    white-space: nowrap; /* Mencegah teks turun ke baris berikutnya */
+    white-space: nowrap; 
   }
   
   .center-nav .location-linus-btn {
@@ -67,13 +67,13 @@ nav {
   
   @keyframes moveLogo {
     0% {
-        transform: translateX(0); /* Posisi awal */
+        transform: translateX(0); 
     }
     50% {
-        transform: translateX(5px); /* Bergerak ke kanan */
+        transform: translateX(5px);
     }
     100% {
-        transform: translateX(0); /* Kembali ke posisi awal */
+        transform: translateX(0); 
     }
   }
   
@@ -86,15 +86,14 @@ nav {
     animation: moveLogo 1s infinite ease-in-out;
   }
   
-  /* Hamburger Menu */
   .hamburger {
     font-size: 24px;
     cursor: pointer;
     color: white;
     position: absolute;
-    top: 50%; /* Posisi vertikal di tengah */
-    right: 20px; /* Pojok kanan atas */
-    transform: translateY(-50%); /* Sejajarkan vertikal dengan elemen lain */
+    top: 50%; 
+    right: 20px;
+    transform: translateY(-50%); 
   }
   
   .hamburger:hover {
@@ -102,13 +101,12 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Sidebar */
   .sidebar {
     z-index: 1000;
     height: 100%;
-    width: 0; /* Width default 0 */
+    width: 0; 
     position: fixed;
-    top: 78px; /* Adjust top to 0 for full height */
+    top: 78px; 
     right: 0;
     background-color: #070707b9;
     overflow-x: hidden;
@@ -117,9 +115,9 @@ nav {
     border-radius: 10px 0 0 10px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     display: flex;
-    flex-direction: column; /* Ini akan memastikan konten berada di atas, toggle di bawah */
+    flex-direction: column; 
     height: 100%;
-    padding-bottom: 20px; /* Tambahkan ruang untuk toggle */
+    padding-bottom: 20px;
     
   }
   
@@ -150,7 +148,6 @@ nav {
   }
   
   .sidebar.active {
-    width: 250px; /* Adjust width when active */
-    z-index: 2000; /* Ensure it is above other elements */
+    width: 250px; 
+    z-index: 2000; 
   }
-  

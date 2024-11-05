@@ -1,4 +1,3 @@
-/* General styling for light mode */
 body {
     background-color: #000000;
     color: #ffffff;
@@ -6,13 +5,11 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark mode for the entire body */
 body.dark-mode {
     background-color: #000000;
     color: #ffffff;
 }
 
-/* Header in dark mode */
 body.dark-mode nav {
     background-color:  #1c1c1c;
     color: #ffffff;
@@ -29,8 +26,6 @@ body.dark-mode .main-title {
 body.dark-mode .TLcontent .TLdescription {
     background-color:  #000000;
 }
-
-
 
 body.dark-mode .TLtable {
     background-color:  #000000;
@@ -61,16 +56,11 @@ body.dark-mode .TLprocedure-table th {
     color: #ffffff;
 }
 
-
-
-
-
 .content {
     text-align: center;
     margin-top: 50px;
 }
 
-/* Toggle button container */
 .toggle-container {
     display: flex;
     justify-content: center;
@@ -78,12 +68,10 @@ body.dark-mode .TLprocedure-table th {
     margin-top: 20px;
 }
 
-/* Hide the default checkbox */
 #darkModeToggle {
     display: none;
 }
 
-/* Toggle switch styling */
 .toggle-label {
     position: relative;
     width: 60px;
@@ -94,7 +82,6 @@ body.dark-mode .TLprocedure-table th {
     transition: background-color 0.3s;
 }
 
-/* Moving ball inside the toggle */
 .toggle-ball {
     position: absolute;
     top: 3px;
@@ -109,13 +96,11 @@ body.dark-mode .TLprocedure-table th {
     justify-content: center;
 }
 
-/* Icon styling */
 .sun-icon, .moon-icon {
     width: 16px;
     height: 16px;
 }
 
-/* Hide sun icon in dark mode and moon icon in light mode */
 .sun-icon {
     display: block;
 }
@@ -132,20 +117,17 @@ body.dark .moon-icon {
     display: block;
 }
 
-/* Dark mode enabled */
 #darkModeToggle:checked + .toggle-label {
     background-color: #4d4d4d;
 }
 
-/* Move the ball to the right when dark mode is enabled */
 #darkModeToggle:checked + .toggle-label .toggle-ball {
     transform: translateX(30px);
 }
 
-/* Styling for the notification box */
 .notification-box {
     position: fixed;
-    bottom: -100px; /* Initially out of view */
+    bottom: -100px; 
     left: 50%;
     transform: translateX(-50%);
     background-color: #089a5b;
@@ -155,23 +137,20 @@ body.dark .moon-icon {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     z-index: 1000;
-    transition: all 0.5s ease-in-out; /* Smooth animation */
-    display: flex; /* Flexbox to align icon and text */
-    align-items: center; /* Vertically center */
-    gap: 10px; /* Space between icon and text */
+    transition: all 0.5s ease-in-out; 
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-/* Show the notification */
 .notification-box.show {
-    bottom: 30px; /* Appear 30px from the bottom */
+    bottom: 30px; 
     opacity: 1;
 }
 
-/* Optional: Hover effect for interactivity */
 .notification-box:hover {
     background-color: #0eab65;
     cursor: pointer;
 }
-

@@ -3,7 +3,7 @@ body {
   background-color: #f4f4f4;
 }
 main {
-  margin-top: 60px; /* Sesuaikan jarak sesuai kebutuhan */
+  margin-top: 60px; 
   padding-top: 20px;
 }
 
@@ -13,13 +13,11 @@ main {
   text-align: center;
 }
 
-/* Content container */
 .TLcontent {
   display: flex;
- /* Stack vertically on small screens */
   width: 90%;
   max-width: 1300px;
-  margin: 50px auto 100px; /* Ubah margin atas menjadi 50px */
+  margin: 50px auto 100px; 
 }
 
 .TLdescription {
@@ -27,14 +25,13 @@ main {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  margin: 20px 0; /* Margin untuk jarak vertikal */
+  margin: 20px 0;
 }
 
 .TLrute {
-  width: 100%; /* Full width for images on small screens */
+  width: 100%; 
 }
 
-/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -76,51 +73,49 @@ td {
   padding: 20px;
 }
 
-/* Image styling */
 .TLbus-image, .TLrute {
-  width: 100%; /* Full width for images */
-  max-width: 600px; /* Limit max width */
+  width: 100%; 
+  max-width: 600px; 
   height: auto;
   display: block;
   margin: 0 auto 20px;
 }
 
-/* Media Queries for Responsiveness */
 @media (min-width: 768px) {
   .TLcontent {
-    flex-direction: row; /* Side by side on larger screens */
+    flex-direction: row; 
   }
 
   .TLdescription {
-    width: 48%; /* Two columns */
-    margin: 0 10px; /* Side margins */
+    width: 48%; 
+    margin: 0 10px; 
   }
 
   .TLtable, .TLprocedure-table {
-    margin-top: 0; /* Adjust top margin */
+    margin-top: 0;
   }
 }
 
 @media (max-width: 576px) {
   .main-title {
-    font-size: 28px; /* Smaller title on small screens */
+    font-size: 28px; 
   }
 
   table {
-    font-size: 14px; /* Smaller font for tables */
+    font-size: 14px; 
   }
 
   .TLnotes {
-    font-size: 12px; /* Smaller notes */
+    font-size: 12px; 
   }
 }
 @media (max-width: 768px) {
   main {
-    margin-top: 40px; /* Jarak yang lebih kecil untuk layar tablet */
+    margin-top: 40px; 
   }
 }
 @media (max-width: 576px) {
   main {
-    margin-top: 30px; /* Jarak yang lebih kecil untuk layar ponsel */
+    margin-top: 30px; 
   }
 }
