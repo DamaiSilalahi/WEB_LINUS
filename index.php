@@ -109,22 +109,20 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="layanan-pengaduan">
-                <div class="icon-box">
-                    <i class="fa fa-user" style="font-size: 100px;"></i>
-                </div>
-                <p style="font-size: 35px">LAYANAN<br>PENGADUAN</p>
+    <div class="footer-content">
+        <div class="layanan-pengaduan">
+            <div class="icon-box">
+                <i class="fa fa-user" style="font-size: 50px;"></i>
             </div>
-            <div class="contact-info">
-                <div class="phone">
-                    <i class="fa fa-phone"></i>
-                    <i class="fa fa-whatsapp"></i>
-                    <span>0812-6356-534<br>0812-8688-5588</span>
-                </div>
+            <p style="font-size: 35px">LAYANAN PENGADUAN</p>
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                <i class="fa fa-whatsapp"></i>
+                <span>0812-6356-534<br>0812-8688-5588</span>
             </div>
         </div>
-    </footer>   
+    </div>
+</footer> 
     <script src="js/script.js"></script>
 </body>
 </html>
