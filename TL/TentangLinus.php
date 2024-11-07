@@ -61,7 +61,7 @@
       <aside id="sidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
           <a href="TentangLinus.php" onclick="openTentangLinus()">Tentang Linus</a>
-          <a href="../faq/faq.php" onclick="openFAQ()">Pertanyaan</a>
+          
 
           <div class="toggle-container">
             <input type="checkbox" id="darkModeToggle">
@@ -83,7 +83,11 @@
         </div>
     </div>
         </aside>
-        
+    <a href="../faq/faq.php">
+       <div class="faq-button">
+           <i class="fa fa-question"></i>
+    </div>
+    </a>   
     <main>
        
         <section class="TLcontent">

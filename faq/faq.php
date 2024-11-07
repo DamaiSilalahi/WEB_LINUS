@@ -18,6 +18,7 @@
     </script>
 </head>
 <body>
+
     <nav>
         <div class="logo-container">
             <img src="../img/logousu.jpg" alt="logo usu">
@@ -60,7 +61,6 @@
       <aside id="sidebar" class="sidebar">
           <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
           <a href="../TL/TentangLinus.php" onclick="openTentangLinus()">Tentang Linus</a>
-          <a href="faq.php" onclick="openFAQ()">Pertanyaan</a>
 
           
           <div class="toggle-container">
@@ -83,7 +83,13 @@
         </div>
     </div>
         </aside>
-        
+     
+    <a href="faq.php">
+        <div class="faq-button">
+        <i class="fa fa-question"></i>
+        </div>
+    </a>
+
     <main>
         <section class="faq-section">
             <header>
@@ -177,3 +183,4 @@
     <script src="../js/script.js"></script>
 </body>
 </html>
+ 
